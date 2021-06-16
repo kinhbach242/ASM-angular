@@ -1,0 +1,46 @@
+<app-header></app-header>
+<div class="container" style="padding-bottom: 50px;">
+    <div class="pen-title">
+        <h1>Project</h1>
+    </div>
+    <div class="tablePJ">
+        <button routerLink="/project/newproject" type="button" class="btn btn-outline-primary">
+          Create Project
+        </button>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">ID Project</th>
+                    <th scope="col">Project Name</th>
+                    <th scope="col">Date of start</th>
+                    <th scope="col">TeamSize</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody *ngIf="loader">
+                <tr class="odd gradeX" *ngFor="let project of projectss">
+                    <td>{{project.id}}</td>
+                    <td>{{project.ProjectName}}</td>
+                    <td>{{project.DateofStart}}</td>
+                    <td class="center">{{project.TeamSize}}</td>
+                    <td class="center">
+                        <button style="margin-right: 10px;" class="btn btn-primary btn-sm" (click)="editProject(project.id)">Edit</button>
+                        <button class="btn btn-warning btn-sm" (click)="xoaProject(project.id)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody *ngIf="!loader">
+                <tr class="odd gradeX">
+                    <td>Loading...</td>
+                    <td>Loading...</td>
+                    <td>Loading...</td>
+                    <td class="center">Loading...</td>
+                    <td class="center">
+                        <button style="margin-right: 10px;" class="btn btn-primary btn-sm" disabled>Edit</button>
+                        <button class="btn btn-warning btn-sm" disabled>Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

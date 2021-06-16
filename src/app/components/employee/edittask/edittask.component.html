@@ -1,0 +1,67 @@
+<app-header></app-header>
+<div class="navbar navbar-inverse set-radius-zero">
+    <div class="container" style="padding-bottom: 50px;">
+
+        <div class="col">
+            <div class="panel panel-info">
+                <div class="pen-title">
+                    <h1>Edit-Project</h1>
+                </div>
+                <div class="panel-body">
+                    <form role="form" [formGroup]="productForm" (ngSubmit)="onSubmit()">
+                        <div class="form-group">
+                            <label>Task ID:</label>
+                            <input class="form-control" type="text" name="id" formControlName="id" />
+                            <span *ngIf="!productForm.get('id')?.valid && (productForm.get('id')?.dirty||productForm.get('id')?.touched)" class="help-block">Bạn chưa nhập Task ID"</span>
+                        </div>
+                        <div class="form-group">
+                            <label>Task Name:</label>
+                            <input class="form-control" type="text" name="TaskName" formControlName="TaskName" />
+                            <span *ngIf="!productForm.get('TaskName')?.valid && (productForm.get('TaskName')?.dirty||productForm.get('TaskName')?.touched)" class="help-block">Bạn chưa nhập Task Name"</span>
+                        </div>
+                        <div class="form-group">
+                            <label>Desscription:</label>
+                            <textarea class="form-control" rows="3" name="Desscription" formControlName="Desscription"></textarea>
+                            <span *ngIf="!productForm.get('Desscription')?.valid && (productForm.get('Desscription')?.dirty||productForm.get('Desscription')?.touched)" class="help-block">Bạn chưa nhập Desscription"</span>
+                        </div>
+                        <div class="form-group">
+                            <label>Project:</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <select class="form-select" aria-label="Default select example" name="Project" formControlName="Project">
+                            <option selected>Open this select projects</option>
+                            <option value="{{project.ProjectName}}" *ngFor="let project of projectsss">{{project.ProjectName}}</option>
+                        </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Assigned To:</label>&nbsp; &nbsp; &nbsp;
+                            <select class="form-select" aria-label="Default select example" name="Assigned_To" formControlName="Assigned_To">
+                            <option selected>Open this select assigned</option>
+                            <option value="design layout">design layout</option>
+                            <option value="data management">data management</option>
+                            <option value="project management">project management</option>
+                        </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Priority:</label>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                            <select class="form-select" aria-label="Default select example" name="Priority" formControlName="Priority">
+                            <option selected>Open this select priority</option>
+                            <option value="Hard">Hard</option>
+                            <option value="Easy">Easy</option>
+                            <option value="Nomal">Nomal</option>
+                        </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Status:</label>
+                            <input class="form-control" type="text" name="Status" formControlName="Status" />
+                        </div>
+                        <button style='margin-top:10px; margin-right: 10px;' type="submit" class="btn btn-primary" (click)='onBack()' [disabled]="productForm.invalid">Save </button>
+                        <a class="btn btn-danger" (click)='onBack()' style='width:70px; margin-top:10px'>
+                                  Cancel
+                              </a>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

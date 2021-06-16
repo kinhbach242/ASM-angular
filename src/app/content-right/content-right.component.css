@@ -1,0 +1,37 @@
+.content-right {
+    margin-top: 10px;
+    width: 280px;
+    height: 634px;
+    overflow: scroll;
+}
+
+.title {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+    background-color: #198754;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.list-member {
+    width: 100%;
+    text-align: center;
+}
+
+.btn-member {
+    width: 100%;
+    color: white;
+    background-color: #F37022;
+}
+
+.card-body {
+    width: 95%;
+    margin-bottom: 20px;
+}

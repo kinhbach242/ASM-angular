@@ -1,0 +1,27 @@
+.pen-title {
+    margin: 50px 0 50px 0;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.pen-title h1 {
+    color: #282A35;
+    font-size: 48px;
+    font-weight: 500
+}
+
+.tablePJ {
+    width: 80%;
+    margin: 0 auto
+}
+
+.btn-action {
+    background: none;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+}

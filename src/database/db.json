@@ -1,0 +1,265 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "ProjectName": "Project 1",
+      "Prices": 23000000,
+      "DateofStart": "2020-02-20",
+      "TeamSize": 4
+    },
+    {
+      "id": 2,
+      "ProjectName": "Project 2",
+      "Prices": 56000000,
+      "DateofStart": "2020-05-15",
+      "TeamSize": 6
+    },
+    {
+      "id": 3,
+      "ProjectName": "Project 3",
+      "DateofStart": "2020-02-14",
+      "TeamSize": 3
+    },
+    {
+      "id": 4,
+      "ProjectName": "Project 4",
+      "Prices": 18000000,
+      "DateofStart": "2020-04-17",
+      "TeamSize": 4
+    },
+    {
+      "id": 5,
+      "ProjectName": "Project 5",
+      "Prices": 15000000,
+      "DateofStart": "2020-10-14",
+      "TeamSize": 3
+    },
+    {
+      "id": 6,
+      "ProjectName": "Project 6",
+      "Prices": 21000000,
+      "DateofStart": "2020-11-14",
+      "TeamSize": 7
+    },
+    {
+      "id": 7,
+      "ProjectName": "Project 7",
+      "DateofStart": "2020-03-14",
+      "TeamSize": 2
+    },
+    {
+      "id": 8,
+      "ProjectName": "Project 8",
+      "DateofStart": "2020-06-12",
+      "TeamSize": 5
+    },
+    {
+      "id": 9,
+      "ProjectName": "Project 9",
+      "DateofStart": "2020-05-15",
+      "TeamSize": 8
+    },
+    {
+      "id": 12,
+      "ProjectName": "Project 12",
+      "DateofStart": "2021-06-17",
+      "TeamSize": "10"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "TaskName": "Task 1",
+      "Desscription": "abcd",
+      "Project": "Project 1",
+      "Assigned_To": "design layout",
+      "Priority": "Nomal",
+      "Status": "Holding"
+    },
+    {
+      "id": 2,
+      "TaskName": "Task 2",
+      "Desscription": "abcd",
+      "Project": "Project 2",
+      "Assigned_To": "data management",
+      "Priority": "Nomal",
+      "Status": "Holding"
+    },
+    {
+      "id": 3,
+      "TaskName": "Task 3",
+      "Desscription": "abcd",
+      "Project": "Project 3",
+      "Assigned_To": "project management",
+      "Priority": "Nomal",
+      "Status": "Holding"
+    },
+    {
+      "id": 4,
+      "TaskName": "Task 4",
+      "Desscription": "abcd",
+      "Project": "Project 4",
+      "Assigned_To": "project management",
+      "Priority": "Easy",
+      "Status": "Holding"
+    },
+    {
+      "id": 5,
+      "TaskName": "Task 5",
+      "Desscription": "abcd",
+      "Project": "Project 5",
+      "Assigned_To": "data management",
+      "Priority": "Hard",
+      "Status": "Holding"
+    },
+    {
+      "id": 6,
+      "TaskName": "Task 6",
+      "Desscription": "abcd",
+      "Project": "Project 6",
+      "Assigned_To": "project management",
+      "Priority": "Easy",
+      "Status": "Holding"
+    }
+  ],
+  "teams": [
+    {
+      "id": 1,
+      "TeamName": "East"
+    },
+    {
+      "id": 2,
+      "TeamName": "West"
+    },
+    {
+      "id": 3,
+      "TeamName": "South"
+    },
+    {
+      "id": 4,
+      "TeamName": "North"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "Username": "Gi Nê Đin Di Đan",
+      "Fullname": "didan111",
+      "Email": "didan.101@gmail.com",
+      "Password": "123111",
+      "TrangThai": "Active",
+      "TeamName": "West",
+      "Roles": "Leader"
+    },
+    {
+      "id": 2,
+      "Username": "vimgan111",
+      "Fullname": "Lu ít Vim Gan",
+      "Email": "vimgan111@gmail.com",
+      "Password": "12312345",
+      "TrangThai": "Active",
+      "TeamName": "North",
+      "Roles": "Leader"
+    },
+    {
+      "id": 3,
+      "Username": "poppa@101",
+      "Fullname": "Pau Pốp Pa",
+      "Password": "110010",
+      "Roles": "Leader",
+      "Email": "poppa1010@gmail.com",
+      "TeamName": "West",
+      "TrangThai": "Active"
+    },
+    {
+      "id": 4,
+      "Username": "bruno@123",
+      "Fullname": "Bờ Ru Nô Fet Nan Đết",
+      "Email": "bruno1747@gmail.com",
+      "Password": "123123123",
+      "TrangThai": "Active",
+      "TeamName": "South",
+      "Roles": "Leader"
+    },
+    {
+      "id": 5,
+      "Username": "vila1010",
+      "Fullname": "Đa Vít Vi La",
+      "Email": "vila111@gmail.com",
+      "Password": "123123123",
+      "TrangThai": "Active",
+      "TeamName": "East",
+      "Roles": "Leader"
+    },
+    {
+      "Fullname": "Lút Show",
+      "Username": "lutshow101",
+      "Password": "11111111",
+      "Roles": "Employee",
+      "Email": "lutshow1020@gmail.com",
+      "TeamName": "East",
+      "TrangThai": "Active",
+      "id": 6
+    },
+    {
+      "Fullname": "Sơ A Lết Fe Gu Son",
+      "Username": "feguson101",
+      "Password": "74141",
+      "Roles": "Employee",
+      "Email": "feguson101@gmail.com",
+      "TeamName": "East",
+      "TrangThai": "Active",
+      "id": 7
+    },
+    {
+      "Fullname": "Rô Bên Đi Át",
+      "Username": "diat1014",
+      "Password": "123123",
+      "Roles": "Employee",
+      "Email": "roebjh@gmail.com",
+      "TeamName": "West",
+      "TrangThai": "Active",
+      "id": 8
+    },
+    {
+      "Fullname": "Rô Nan Dô",
+      "Username": "ronando111",
+      "Password": "1111222",
+      "Roles": "Employee",
+      "Email": "ronando111@gmail.com",
+      "TeamName": "South",
+      "TrangThai": "Active",
+      "id": 9
+    },
+    {
+      "Fullname": "Mết Si",
+      "Username": "metsi100",
+      "Password": "maudkkdlek",
+      "Roles": "Employee",
+      "Email": "metsi1201@gmail.com",
+      "TeamName": "South",
+      "TrangThai": "Active",
+      "id": 10
+    },
+    {
+      "Fullname": "Rô Bết Tô Cát Lốt",
+      "Username": "robetto@123",
+      "Password": "11113323",
+      "Roles": "Employee",
+      "Email": "robeto000@gmail.com",
+      "TeamName": "North",
+      "TrangThai": "Active",
+      "id": 11
+    },
+    {
+      "Fullname": "Mi Cồ Ca Rít",
+      "Username": "carit1201",
+      "Password": "123456zzzz",
+      "Roles": "Employee",
+      "Email": "caritmico111@gmai.com",
+      "TeamName": "South",
+      "TrangThai": "Active",
+      "id": 12
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+<app-header></app-header>
+<div class="container" style="padding-bottom: 50px;">
+    <div class="pen-title">
+        <h1>Employee</h1>
+    </div>
+    <button routerLink="/employee/create-task" type="button" class="btn btn-outline-primary">
+          Create Task
+    </button>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>TaskID</th>
+                <th>Task Name</th>
+                <th>Desscription</th>
+                <th>Project</th>
+                <th>Assigned To</th>
+                <th>Priority</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="odd gradeX" *ngFor="let task of taskss">
+                <td>{{task.id}}</td>
+                <td>{{task.TaskName}}</td>
+                <td>{{task.Desscription}}</td>
+                <td>{{task.Project}}</td>
+                <td>{{task.Assigned_To}}</td>
+                <td>{{task.Priority}}</td>
+                <td class="center">{{task.Status}}</td>
+                <td class="center" style="width: 130px;">
+                    <button style="margin-right: 10px;" class="btn btn-primary btn-sm" (click)="editTask(task.id)">Edit</button>
+                    <button class="btn btn-warning btn-sm" (click)="xoaTask(task.id)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>

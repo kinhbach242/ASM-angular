@@ -1,0 +1,16 @@
+.navbar {
+    background-color: #272F54 !important;
+    box-shadow: 0 4px 2px -2px black !important;
+}
+
+.navbar-brand {
+    box-shadow: inset;
+}
+
+.nav-link {
+    font-weight: 500 !important;
+}
+
+.nav-link a.active {
+    color: white;
+}

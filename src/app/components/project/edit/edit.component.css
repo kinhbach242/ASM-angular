@@ -1,0 +1,16 @@
+.pen-title {
+    margin: 50px 0 50px 0;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.pen-title h1 {
+    color: #282A35;
+    font-size: 48px;
+    font-weight: 500
+}
+
+form label {
+    color: black !important;
+    font-weight: 500;
+}

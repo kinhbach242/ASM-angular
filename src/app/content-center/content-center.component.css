@@ -1,0 +1,56 @@
+.content-center {
+    width: 672px;
+    margin: 0 25px 0 25px;
+}
+
+.option {
+    top: 10px;
+    position: relative;
+}
+
+.right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.contentcenter-option select {
+    height: 30px;
+    color: white;
+    border-radius: 6px;
+    background-color: #198754
+}
+
+.mainCenter {
+    background-color: white;
+    margin-top: 15px;
+    height: 588px;
+}
+
+.mainCenter-Top {
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.title {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+    background-color: #198754;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.mainCenter-Top table {
+    margin: 35px;
+}
+
+.mainCenter-Bottom table {
+    width: 90%;
+    margin: 35px;
+}
